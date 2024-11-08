@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selecter</title>
+    <style>
+        /* 元素选择器 */
+        h2{
+            color: aqua;
+        }
+        /* 类选择器 */
+        .highlight{
+            background-color: blueviolet;
+        }
+        /* ID选择器 */
+        #header{
+            font-size: larger;
+        }
+        /* 全选择器 */
+        *{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        /* 子元素选择器 */
+        .father > .son{
+            color: aquamarine;
+            font-size: larger;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: rgb(255, 127, 178);
+            font-size: larger;
+        }
+        /* 相邻选择器 */
+        h2 + p{
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>diff css selecter</h1>
+    <br>
+
+    <h2> element selecter</h2>
+
+    <h3>class selecter</h3>
+
+    <h3 class="highlight">class selecter</h3>
+
+    <h4 id="header">id selecter</h4>
+
+    <div class="father">
+        <p class="son">sub element selecter</p>
+        <div>
+            <p class="grandson">Descendant selecter</p>
+        </div>
+    </div>
+
+    <p> beside brother sekecter</p>
+    <h2> beside brother seketer</h2>
+    <p> beside brother seketer</p>
+</body>
+</html>
