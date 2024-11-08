@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titlepositioning</title>
+    <style>
+        .box1{
+            background-color: aqua;
+            height: 350px;
+        }
+        .box-normal{
+            background-color: blue;
+            height: 100px;
+            width: 100px;
+        }
+        .box-relative{
+            background-color: rgb(255, 0, 17);
+            height: 100px;
+            width: 100px;
+            position: relative;
+        }
+        .box2{
+            background-color: rgb(168, 172, 59);
+            height: 350px;
+
+        }
+        .box-absolute{
+            background-color: rgb(0, 255, 81);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 120px;
+        }
+        .fixed-box{
+            background-color: brown;
+            width: 100px;
+            height: 100px;
+            position: fixed;
+            right: 0;
+            top: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>relative positioning</h1>
+    <div class="box1">
+        <div class="box-normal"></div>
+        <div class="box-relative"></div>
+        <div class="box-normal"></div>
+    </div>
+
+    <h1>absolute positioning</h1>
+    <div class="box2">
+        <div class="box-normal"></div>
+        <div class="box-absolute"></div>
+        <div class="box-normal"></div>
+    </div>
+
+    <h1>fixed posotioning</h1>
+    <div class="fixed-box"> </div>
+</body>
+</html>
