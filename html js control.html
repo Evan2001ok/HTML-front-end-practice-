@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript control</title>
+</head>
+<body>
+    <h1>This is a condition loop</h1>
+    <script>
+
+        console.log('condition');
+        let age = 15;
+        if (age < 10){
+            alert('danger');
+            console.log('you cant smoke');
+        }else {
+            console.log('you can smoke, but not more');
+        }
+
+        console.log('for loop');
+        for(i=1; i<= 10; i++){
+            console.log(i);
+        }
+
+        console.log('while loop');
+        let count = 6;
+        while(count <= 10){
+            console.log(count);
+            count++;
+        }
+
+        console.log('for loop 2')
+        for (let i = 0; i < 7; i++){
+            if(i == 2){
+                continue;
+            }
+            else if(i == 4){
+                break;
+            }
+            else{
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>
