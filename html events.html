@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1> this is some Events examples</h1>
+    <button onclick="click_event()">This is a click event</button>
+    <input type="text" onfocus="focus_event()" onblur="blur_event()">
+    <script>
+        // click event
+        function click_event(){
+            alert('click event appear')
+        }
+        function focus_event(){
+            console.log('focus event')
+        }
+        function blur_event(){
+            console.log('blur event')
+        }
+    </script>
+</body>
+</html>
