@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM</title>
+    
+</head>
+<body>
+    <div id="box1">This a ID selecter</div>
+    <br>
+    <div class="box2">This a class selecter</div>
+    <br>
+    <div>This a common selecter</div>
+    <hr>
+
+    <button> this is a buttom</button>
+
+    <script>
+        let element_id = document.getElementById('box1');
+        console.log(element_id);
+
+        let element_class = document.getElementsByClassName('box2')[0];
+        console.log(element_class);
+
+        let element_tag = document.getElementsByTagName('div')[2];
+        console.log(element_tag);
+
+        element_id.innerHTML = '<a href="#">jump</a> ';
+        element_class.innerText = 'change class';
+
+        element_tag.style.color = 'green'
+        element_tag.style.fontSize = '50px'
+
+        // DOM connect buttom
+        let buttom_element = document.getElementsByTagName('button')[0];
+        console.log(buttom_element);
+        // connect variable to button
+        buttom_element.onclick = function(){
+            alert('button work');
+        }
+        buttom_element.addEventListener('click', function(){
+            alert('anotherway button work');
+        });
+    </script>
+    
+</body>
+</html>
