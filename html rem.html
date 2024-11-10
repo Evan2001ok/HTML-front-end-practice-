@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How ram work</title>
+    <style>
+        /* html{
+            font-size: 5px;
+        } */
+        .box-px{
+            width: 500px;
+            height: 300px;
+            background-color: aqua;
+            margin-bottom: 50px;
+        }
+        .box-rem{
+            width: 5rem;
+            height: 3rem;
+            background-color: rgb(247, 0, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="box-px"></div>
+    <div class="box-rem"></div>
+
+    <script>
+        // dynamic change of html by font size
+        //用于动态调整图片表格等大小的html编写方式
+        function ResetHtmlFontSize(){
+            document.documentElement.style.fontSize = screen.width / 10 +'px';
+        }
+        
+        ResetHtmlFontSize();
+
+        //when we change device function again
+        window.onresize = ResetHtmlFontSize;
+    </script>
+</body>
+</html>
